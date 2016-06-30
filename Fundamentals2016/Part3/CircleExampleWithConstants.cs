@@ -5,36 +5,36 @@
     public class CircleExampleWithConstants
     {
         // constant declaration 
-        const double _pi = 3.14159;
-        readonly double _pi2;
-        double _r;
+        private const double pi = 3.14159;
+        private readonly double pi2;
+        double r;
 
         public CircleExampleWithConstants()
         {
-            //_pi = 3.14159;
-            _pi2 = 3.14159;
+            //this.pi = 3.14159;
+            pi2 = 3.14159;
         }
 
         public CircleExampleWithConstants(double r)
         {
-            _r = r;
-            //_pi = 3.14159;
-            _pi2 = 3.14159;
+            this.r = r;
+            //this.pi = 3.14159;
+            pi2 = 3.14159;
         }
 
         public CircleExampleWithConstants(double r, double pi)
         {
-            _r = r;
-            //_pi = pi;
-            _pi2 = pi;
+            this.r = r;
+            //this.pi = pi;
+            pi2 = pi;
         }
 
         public void DisplayArea()
         {
             Console.WriteLine();
-            var areaCircle = _pi * Math.Pow(_r, 2);
-            var areaCircle2 = _pi2 * Math.Pow(_r, 2);
-            Console.WriteLine("Radius: {0}, Area: {1}, Area: {2}", _r, areaCircle, areaCircle2);
+            var areaCircle = pi * Math.Pow(r, 2);
+            var areaCircle2 = pi2 * Math.Pow(r, 2);
+            Console.WriteLine("Radius: {0}, Area: {1}, Area: {2}", r, areaCircle, areaCircle2);
             Console.ReadLine();
         }
     }

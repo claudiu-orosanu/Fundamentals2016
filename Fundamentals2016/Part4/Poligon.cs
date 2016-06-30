@@ -2,9 +2,9 @@
 {
     public abstract class Poligon 
     {
-        public Poligon() { }
+        protected Poligon() { }
 
-        public Poligon(double l1) 
+        protected Poligon(double l1) 
         {
             L1 = l1;
         }
@@ -21,13 +21,13 @@
             switch (Type)
             {
                 case PoligonEnum.Triangle:
-                    return string.Format("Triangle");
+                    return "Triangle";
                 case PoligonEnum.Rectangle:
-                    return string.Format("Rectangle");
+                    return "Rectangle";
                 case PoligonEnum.RegularPentagon:
-                    return string.Format("RegularPentagon");
+                    return "RegularPentagon";
                 default:
-                    return string.Format("Unknown");
+                    return "Unknown";
             }
         }
     }

@@ -34,15 +34,20 @@ namespace Fundamentals2016
             #endregion
 
 
-            #region part2 - Class, members, methodes, constructors, override ToString()
+            #region part2 - struct, class, members, methodes, constructors, override ToString()
 
             Console.WriteLine("\n\n\nPart 2: \n");
 
             // initialization methods:
             // 1:
-            var rectangle1 = new Fundamentals2016.Part2.Rectangle();
-            rectangle1.Length = 10;
-            rectangle1.Width = 6;
+            //var rectangle1 = new Fundamentals2016.Part2.Rectangle();
+            //rectangle1.Length = 10;
+            //rectangle1.Width = 6;
+            var rectangle1 = new Fundamentals2016.Part2.Rectangle
+            {
+                Length = 10,
+                Width = 6
+            };
 
             // 2:
             var rectangle2 = new Fundamentals2016.Part2.Rectangle(12, 8);
