@@ -108,7 +108,7 @@ namespace Fundamentals2016
             #endregion
 
 
-            #region part4 - enums, if (?), ??, switch, inheritance, interface, IComparable, generic  methods, overloading, polymorphism
+            #region part4 - enums, switch, inheritance, interface, IComparable, generic  methods, overloading, polymorphism
 
           
             #endregion
