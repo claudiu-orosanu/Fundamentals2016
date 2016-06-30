@@ -7,16 +7,16 @@
     {
 
         // member variables
-        private double _length;
-        private double _width;
+        private double length;
+        private double width;
 
         // properties
         public double Length {
             get {
-                return _length;
+                return length;
             }
             set {
-                _length = value;
+                length = value;
             }
         }
 
@@ -24,11 +24,11 @@
         {
             get
             {
-                return _width;
+                return width;
             }
             set
             {
-                _width = value;
+                width = value;
             }
         }
 
@@ -38,37 +38,37 @@
         // constructor with parameter
         public Rectangle(double length, double width)
         {
-            _length = length;
-            _width = width;
+            this.length = length;
+            this.width = width;
         }
 
 
         // Methods:
         public void InitializeWithCustomValues()
         {
-            _length = 8;
-            _width = 4;
+            length = 8;
+            width = 4;
         }
 
         public void InitializeWithSpecificValues(double length, double width)
         {
-            _length = length;
-            _width = width;
+            this.length = length;
+            this.width = width;
         }
 
         public double GetArea()
         {
-            return _length * _width;
+            return length * width;
         }
 
         public void Display()
         {
-            Console.WriteLine("Length: {0}", _length);
-            Console.WriteLine("Width: {0}", _width);
+            Console.WriteLine($"Length: {0}", length);
+            Console.WriteLine("Width: {0}", width);
             Console.WriteLine("Area: {0}", GetArea());
         }
 
-        // ToString - a based methode from based class Object
+        // ToString() - a based methode from based class Object
         public override string ToString()
         {
             #region withStringConcat
