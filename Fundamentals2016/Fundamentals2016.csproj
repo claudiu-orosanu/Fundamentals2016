@@ -56,7 +56,7 @@
     <Compile Include="Part5\WorkWithFileExample.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Part1\Test1.cs" />
+    <Compile Include="Part2\TestNameSpace.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -9,7 +9,8 @@ namespace Fundamentals2016
     using Part3;
     using Part5;
     using System;
-    
+    using MyNamespace;
+
     // class declaration
     // The class keyword is used for declaring a class.
     public class Program
@@ -36,6 +37,9 @@ namespace Fundamentals2016
             #region part2 - class, members, methodes, constructors, override ToString(), using position in file, struct, generics, enums
 
             Console.WriteLine("\n\n\nPart 2: \n");
+
+            // namespace:
+            Test3.MyMethode();
 
             // initialization methods:
             // 1:
@@ -99,9 +103,17 @@ namespace Fundamentals2016
             // working with constants:
             Console.WriteLine("\n");
             Console.WriteLine("Enter Radius: ");
-            var radius = Convert.ToDouble(Console.ReadLine());
-            var circle = new CircleExampleWithConstants(radius);
-            circle.DisplayArea();
+            try
+            {
+                var radius = Convert.ToDouble(Console.ReadLine());
+                var circle = new CircleExampleWithConstants(radius);
+                circle.DisplayArea();
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine(e.Message);
+                Console.ReadKey();
+            }
 
             #endregion
 
@@ -121,6 +133,8 @@ namespace Fundamentals2016
             // custom exception:
             Console.WriteLine("\n");
             Console.WriteLine("Enter a number: ");
+
+
             var number = Convert.ToDouble(Console.ReadLine());
             if (number < 0)
             {
