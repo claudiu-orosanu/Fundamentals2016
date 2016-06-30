@@ -51,7 +51,6 @@
     <Compile Include="Part4\Poligon.cs" />
     <Compile Include="Part4\PoligonEnum.cs" />
     <Compile Include="Part4\IPoligon.cs" />
-    <Compile Include="Part4\Rectangle.cs" />
     <Compile Include="Part4\RegularPentagon.cs" />
     <Compile Include="Part5\NegativeNumberException.cs" />
     <Compile Include="Part5\WorkWithFileExample.cs" />

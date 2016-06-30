@@ -110,18 +110,7 @@ namespace Fundamentals2016
 
             #region part4 - enums, if (?), ??, switch, inheritance, interface, IComparable, generic  methods, overloading, polymorphism
 
-            var rectangle = new Fundamentals2016.Part4.Rectangle(2, 6);
-            var regularPentagon = new RegularPentagon(4);
-
-            Console.WriteLine("\n\n " + rectangle.ToString() + ": Perimetru: " + PoligonHelper.GetPerimeter(rectangle) + "  Arie: " + PoligonHelper.GetAria(rectangle));
-            Console.WriteLine("\n\n " + regularPentagon.ToString() + ": Perimetru: " + PoligonHelper.GetPerimeter(regularPentagon) + "  Arie: " + PoligonHelper.GetAria(regularPentagon));
-            Console.ReadKey();
-
-            // polimophism:
-            Poligon p = new Fundamentals2016.Part4.Rectangle(2, 6);
-            Console.WriteLine("\n\n " + p.GetType() + ": Perimetru: " + p.CalculatePerimeter());
-            Console.ReadKey();
-
+          
             #endregion
             
             

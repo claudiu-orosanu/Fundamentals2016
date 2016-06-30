@@ -10,12 +10,8 @@
             return poligon.CalculatePerimeter();
         }
 
-        public static double GetAria(Rectangle t)
-        {
-            return t.CalculateArea();
-        }
 
-        public static double GetAria(RegularPentagon t)
+        public static double GetArea(RegularPentagon t)
         {
             return t.CalculateArea();
         }
