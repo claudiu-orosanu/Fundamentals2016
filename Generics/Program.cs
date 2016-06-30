@@ -26,8 +26,7 @@ namespace Generics
             return field;
         }
     }
-
-
+    
     public class Car {
         public string type { get; set; }
         public double price { get; set; }
@@ -62,10 +61,10 @@ namespace Generics
 
 
             GenericMethod<int> obiect4 = new GenericMethod<int>(100);
-            Console.WriteLine("Generic methode result type {0}", obiect4.Method<int, double>(39, 38.2).GetType().ToString());
+            Console.WriteLine("Generic methode result type {0}", obiect4.Method<int, double>(39, 38.2).GetType());
 
             GenericMethod<Car> obiect5 = new GenericMethod<Car>(car);
-            Console.WriteLine("Generic methode result type {0}", obiect5.Method<string, double>(car.type, car.price).GetType().ToString());
+            Console.WriteLine("Generic methode result type {0}", obiect5.Method<string, double>(car.type, car.price).GetType());
 
 
             Console.ReadKey();

@@ -1,15 +1,10 @@
-﻿// A namespace is a collection of classes.The Fundamentals2016 namespace contains the class Program.
-// Full name of class Program is in fact: Fundamentals2016.Program
-
-namespace Fundamentals2016
+﻿namespace Fundamentals2016
 {
-    // the using keyword is used to include namespace in the program. A program generally has multiple using statements.
-    // See the test: TestNamespaceInsideUsingUsing
-    
     using Part3;
     using Part5;
     using System;
     using MyNamespace;
+    using Part2;
 
     // class declaration
     // The class keyword is used for declaring a class.
@@ -34,33 +29,33 @@ namespace Fundamentals2016
             #endregion
 
 
-            #region part2 - class, members, methodes, constructors, override ToString(), using position in file, struct, generics, enums
+            #region part2 - class, namespace, dynamic type, static methodes, convertions, constant, readonly, struct, generics, enums
 
             Console.WriteLine("\n\n\nPart 2: \n");
 
-            // namespace:
-            Test3.MyMethode();
+
+            #region simple class example
 
             // initialization methods:
             // 1:
-            //var rectangle1 = new Fundamentals2016.Part2.Rectangle();
-            //rectangle1.Length = 10;
-            //rectangle1.Width = 6;
-            var rectangle1 = new Fundamentals2016.Part2.Rectangle
-            {
-                Length = 10,
-                Width = 6
-            };
+            var rectangle1 = new Rectangle();
+            rectangle1.Length = 10;
+            rectangle1.Width = 6;
+            //var rectangle1 = new Rectangle
+            //{
+            //    Length = 10,
+            //    Width = 6
+            //};
 
             // 2:
-            var rectangle2 = new Fundamentals2016.Part2.Rectangle(12, 8);
+            var rectangle2 = new Rectangle(12, 8);
 
             // 3:
-            var rectangle3 = new Fundamentals2016.Part2.Rectangle();
+            var rectangle3 = new Rectangle();
             rectangle3.InitializeWithCustomValues();
 
             // 4:
-            var rectangle4 = new Fundamentals2016.Part2.Rectangle();
+            var rectangle4 = new Rectangle();
             rectangle4.InitializeWithSpecificValues(20, 15);
 
             // call methods:
@@ -81,24 +76,43 @@ namespace Fundamentals2016
             #endregion
 
 
-            #region part3 - dynamic type, static methodes, convertions, constant variables, readonly variables
+            #region namespace example
 
-            Console.WriteLine("Size of int: {0}", sizeof(int));
-            Console.ReadKey();
+            Test3.MyMethode();
+
+            #endregion
+
+
+            #region satatic class, static methods, dynamic type example
+
+            // dinamyc type: (with static class, static methode)
+            Console.WriteLine();
+            DynamicTypes.DynamicTypesExample();
+
+            #endregion
+
+
+            #region var, boxing and unboxing, type conversion
+
+            var val = 1;
+            object obj = val; // boxing;
+            int i = (int)obj; // unboxing;
 
             // cast double to int.
             const double nr1 = 5673.74;
-            var nr2 = (int)nr1;
-            Console.WriteLine(nr2);
+            int nr2 = (int) nr1;
+            Console.WriteLine("nr = {0}, type = {1}", nr1, nr1.GetType());
+            Console.WriteLine("nr = {0}, type = {1}", nr2, nr2.GetType());
             Console.ReadKey();
-
-            // dinamyc type: (with static methode)
-            Console.WriteLine();
-            DynamicTypes.DynamicTypesExample();
 
             // string conversion: (with static methode)
             Console.WriteLine();
             StringConversion.ConvertValues();
+
+            #endregion
+
+
+            #region const, readonly
 
             // working with constants:
             Console.WriteLine("\n");
@@ -117,14 +131,20 @@ namespace Fundamentals2016
 
             #endregion
 
+            // struct
+            // generic types
+            // enums
 
-            #region part4 - inheritance, interface, IComparable, generic  methods, overloading, polymorphism
-
-          
             #endregion
-            
-            
-            #region part5 - using, read from file, write in file, exceptions, custom exception, threads, async await
+
+
+            #region part3 - inheritance, interface, IComparable, generic  methods, overloading, polymorphism
+
+
+            #endregion
+
+
+            #region part4 - using, read from file, write in file, exceptions, custom exception, threads, async await
 
             var file = new WorkWithFileExample("E:\\ZTH\\TextFile.txt");
             file.ReadContent();
