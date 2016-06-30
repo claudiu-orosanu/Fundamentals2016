@@ -10,18 +10,18 @@ namespace Threads
     {
         public static void Execute()
         {
-            Thread t = new Thread(WriteY);          // Kick off a new thread
+            Thread t = new Thread(Write0);          // Kick off a new thread
             t.Start();                               // running WriteY()
 
             // Simultaneously, do something on the main thread.
-            for (int i = 0; i < 1000; i++) Console.Write("x");
+            for (int i = 0; i < 1000; i++) Console.Write("X");
 
             Console.ReadKey();
         }
 
-        static void WriteY()
+        static void Write0()
         {
-            for (int i = 0; i < 1000; i++) Console.Write("y");
+            for (int i = 0; i < 1000; i++) Console.Write("0");
         }
     }
 }

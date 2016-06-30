@@ -9,9 +9,9 @@ namespace Threads
         {
             Thread t = new Thread(Go);
             t.Start();
-            //t.Join();
+            t.Join();
             
-            //Thread.Sleep(TimeSpan.FromSeconds(5)); // OR Thread.Sleep(5000);
+           // Thread.Sleep(TimeSpan.FromSeconds(5)); // OR Thread.Sleep(5000);
 
             Console.WriteLine("Thread t has ended!");
 
