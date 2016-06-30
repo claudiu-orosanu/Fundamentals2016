@@ -83,15 +83,9 @@ namespace Fundamentals2016
             Console.WriteLine("Size of int: {0}", sizeof(int));
             Console.ReadKey();
 
-            // boxing & unboxing
-            object obj;
-            obj = 100; // this is boxing
-            int unboxObj = (int)obj; // this is unboxing
-
             // cast double to int.
-            double nr1 = 5673.74;
-            int nr2;
-            nr2 = (int)nr1;
+            const double nr1 = 5673.74;
+            var nr2 = (int)nr1;
             Console.WriteLine(nr2);
             Console.ReadKey();
 
