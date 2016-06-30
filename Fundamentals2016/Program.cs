@@ -7,7 +7,6 @@ namespace Fundamentals2016
     // See the test: TestNamespaceInsideUsingUsing
     
     using Part3;
-    using Part4;
     using Part5;
     using System;
     
@@ -19,7 +18,7 @@ namespace Fundamentals2016
         static void Main(string[] args)
         {
             
-            #region part1 - Very short presentation, Hello World, class structure, using position in file
+            #region part1 - Very short presentation, Hello World, class structure
 
             Console.WriteLine("Part 1: \n");
 
@@ -34,7 +33,7 @@ namespace Fundamentals2016
             #endregion
 
 
-            #region part2 - struct, class, members, methodes, constructors, override ToString()
+            #region part2 - class, members, methodes, constructors, override ToString(), using position in file, struct, generics, enums
 
             Console.WriteLine("\n\n\nPart 2: \n");
 
@@ -78,7 +77,7 @@ namespace Fundamentals2016
             #endregion
 
 
-            #region part3 - Value type, Referance type, boxing, unboxing, Dynamic type, static methodes, convertions, constant variables, readonly variables
+            #region part3 - dynamic type, static methodes, convertions, constant variables, readonly variables
 
             Console.WriteLine("Size of int: {0}", sizeof(int));
             Console.ReadKey();
@@ -107,7 +106,7 @@ namespace Fundamentals2016
             #endregion
 
 
-            #region part4 - enums, switch, inheritance, interface, IComparable, generic  methods, overloading, polymorphism
+            #region part4 - inheritance, interface, IComparable, generic  methods, overloading, polymorphism
 
           
             #endregion
