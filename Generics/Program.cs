@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Generics
 {
@@ -16,7 +12,7 @@ namespace Generics
 
     public class GenericMethod<T>
     {
-        T field;
+        readonly T field;
 
         public GenericMethod(T value)
         {
@@ -25,7 +21,7 @@ namespace Generics
 
         public T Method<U, V>(U param1, V param2)
         {
-            Console.WriteLine("{0}, {1}", param1.ToString(), param2.ToString());
+            Console.WriteLine("{0}, {1}", param1, param2);
 
             return field;
         }
