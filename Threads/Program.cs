@@ -13,7 +13,7 @@ namespace Threads
         {
             //Threads examples
             //ThreadTest.Execute();
-            //SharringDataTest.Execute();
+            SharringDataTest.Execute();
             //LockerObjectTest.Execute();
             //JoinSleepTest.Execute();
             //CreatingAndStartingThreads.Execute();
@@ -23,7 +23,7 @@ namespace Threads
 
             //Tasks examples
             //SimpleDownloadingStringTask.Execute();
-            SimpleAsyncDownloadingString.Execute();
+            //SimpleAsyncDownloadingString.Execute();
 
 
             //TasksTest.Execute();

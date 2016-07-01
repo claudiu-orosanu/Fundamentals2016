@@ -9,6 +9,9 @@
             string value = "dot net tutorials";
             value = value.UppercaseFirstLetter();
             Console.WriteLine(value);
+            int val = 3;
+            val = val.Squared();
+            Console.WriteLine(val);
             Console.ReadKey();
         }
     }
@@ -26,5 +29,10 @@
             array[0] = char.ToUpper(array[0]);
             return new string(array);
         }
+        public static int Squared(this int value)
+        {
+            return value * value;
+        }
     }
+
 }
