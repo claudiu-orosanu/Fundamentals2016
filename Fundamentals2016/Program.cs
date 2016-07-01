@@ -38,14 +38,11 @@
 
             // initialization methods:
             // 1:
-            var rectangle1 = new Rectangle();
-            rectangle1.Length = 10;
-            rectangle1.Width = 6;
-            //var rectangle1 = new Rectangle
-            //{
-            //    Length = 10,
-            //    Width = 6
-            //};
+            var rectangle1 = new Rectangle
+            {
+                Length = 10,
+                Width = 6
+            };
 
             // 2:
             var rectangle2 = new Rectangle(12, 8);
@@ -73,6 +70,8 @@
             Console.WriteLine(rectangle4.ToString());
             Console.ReadKey();
 
+            // to do: GetPerimeter();
+
             #endregion
 
 
@@ -92,22 +91,18 @@
             #endregion
 
 
-            #region var, boxing and unboxing, type conversion
+            #region var, boxing and unboxing, conversion
 
             var val = 1;
             object obj = val; // boxing;
             int i = (int)obj; // unboxing;
 
             // cast double to int.
-            const double nr1 = 5673.74;
+            double nr1 = 5673.74;
             int nr2 = (int) nr1;
             Console.WriteLine("nr = {0}, type = {1}", nr1, nr1.GetType());
             Console.WriteLine("nr = {0}, type = {1}", nr2, nr2.GetType());
             Console.ReadKey();
-
-            // string conversion: (with static methode)
-            Console.WriteLine();
-            StringConversion.ConvertValues();
 
             #endregion
 
@@ -134,6 +129,9 @@
             // struct
             // generic types
             // enums
+            // extension methods
+
+            // to do: extension method pe int, ridicare la patrat
 
             #endregion
 

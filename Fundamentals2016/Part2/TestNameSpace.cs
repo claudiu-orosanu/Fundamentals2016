@@ -3,13 +3,15 @@
 //    but if you only have one namespace per file then it doesn't 
 //    make much of a difference whether they go outside or inside the namespace.
 
-//using System;
-using TNI1 = Fundamentals2016.TestNamespaceInsideUsingUsing;
-using TNI2 = Fundamentals2016.TestNamespaceInsideUsingUsing2;
+using System;
+//using TNI1 = Fundamentals2016.TestNamespaceInsideUsingUsing;
+//using TNI2 = Fundamentals2016.TestNamespaceInsideUsingUsing2;
+using Fundamentals2016.TestNamespaceInsideUsingUsing;
+using Fundamentals2016.TestNamespaceInsideUsingUsing2;
 
 namespace Fundamentals2016.TestNamespaceInsideUsingUsing
 {
-    using System;
+    //using System;
 
     public class Test
     {
@@ -24,7 +26,7 @@ namespace Fundamentals2016.TestNamespaceInsideUsingUsing
 
 namespace Fundamentals2016.TestNamespaceInsideUsingUsing2
 {
-    using System;
+    //using System;
 
     public class Test
     {
@@ -39,14 +41,17 @@ namespace Fundamentals2016.TestNamespaceInsideUsingUsing2
 
 namespace MyNamespace
 {
-    using System;
+    //using System;
 
     public class Test3
     {
         public static void MyMethode()
         {
-            TNI1.Test.Print();
-            TNI2.Test.Print();
+            //TNI1.Test.Print();
+            //TNI2.Test.Print();
+
+            Fundamentals2016.TestNamespaceInsideUsingUsing.Test.Print();
+            Fundamentals2016.TestNamespaceInsideUsingUsing2.Test.Print();
             Console.ReadKey();
         }
     }

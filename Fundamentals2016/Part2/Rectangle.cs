@@ -6,7 +6,7 @@
     public class Rectangle
     {
 
-        // member variables
+        // private member variables
         private double length;
         private double width;
 
@@ -63,7 +63,7 @@
 
         public void Display()
         {
-            Console.WriteLine($"Length: {0}", length);
+            Console.WriteLine("Length: {0}", length);
             Console.WriteLine("Width: {0}", width);
             Console.WriteLine("Area: {0}", GetArea());
         }
@@ -74,9 +74,8 @@
             #region withStringConcat
 
             //string result = "Rectangle details: ";
-            //var result = "Rectangle details: ";
 
-            //result = result + "\n\t Length: " + this._length + "\n\t Width: " + this._width + "\n\t Area:" + this.GetArea();
+            //result = result + "\n\t Length: " + this.length + "\n\t Width: " + this.width + "\n\t Area:" + this.GetArea();
 
             #endregion
 
@@ -95,6 +94,5 @@
             return result.ToString();
 
         }
-        
     }
 }
