@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericType", "..\Generics\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethods", "..\ExtensionMethods\ExtensionMethods.csproj", "{6FF719F5-8CF5-49B5-B6BA-4372CEC6C337}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsynchronousProgramming", "..\AsynchronousProgramming\AsynchronousProgramming.csproj", "{C9F3C918-AD77-4969-B9DD-930185EAAFA4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +81,12 @@ Global
 		{6FF719F5-8CF5-49B5-B6BA-4372CEC6C337}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6FF719F5-8CF5-49B5-B6BA-4372CEC6C337}.Release|x86.ActiveCfg = Release|Any CPU
 		{6FF719F5-8CF5-49B5-B6BA-4372CEC6C337}.Release|x86.Build.0 = Release|Any CPU
+		{C9F3C918-AD77-4969-B9DD-930185EAAFA4}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{C9F3C918-AD77-4969-B9DD-930185EAAFA4}.Debug|x86.ActiveCfg = Debug|x86
+		{C9F3C918-AD77-4969-B9DD-930185EAAFA4}.Debug|x86.Build.0 = Debug|x86
+		{C9F3C918-AD77-4969-B9DD-930185EAAFA4}.Release|Any CPU.ActiveCfg = Release|x86
+		{C9F3C918-AD77-4969-B9DD-930185EAAFA4}.Release|x86.ActiveCfg = Release|x86
+		{C9F3C918-AD77-4969-B9DD-930185EAAFA4}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
