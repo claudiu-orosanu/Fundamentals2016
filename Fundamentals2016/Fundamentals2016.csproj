@@ -46,7 +46,6 @@
     <Compile Include="Part2\Rectangle.cs" />
     <Compile Include="Part3\CircleExampleWithConstants.cs" />
     <Compile Include="Part3\DynamicTypes.cs" />
-    <Compile Include="Part3\StringConversion.cs" />
     <Compile Include="Part4\PoligonHelper.cs" />
     <Compile Include="Part4\Poligon.cs" />
     <Compile Include="Part4\PoligonEnum.cs" />
